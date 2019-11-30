@@ -48,4 +48,33 @@
 				</div>		
 			</div>
 		</div>
+		<!-- Sign Up MODAL -->
+		<div id="formsignup" class="modal hide fade" tabindex="-1" aria-hidden="true" data-backdrop="false" data-keyboard="true" role="dialog">il
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title text-info">Sign Up</h3>
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group"> 
+								<label for="Username" class="col-form-label">Username :</label> 
+								<input type="text" id="Username" class="form-control" placeholder="Username" required pattern="[a-zA-Z]{5,10}" x-moz-errormessage="The form must be in the 5-10 character!"> 
+								<label for="Password" class="col-form-label">Password :</label> 
+								<input type="password" id="Password" class="form-control" placeholder="Password" required pattern=".{5,10}" x-moz-errormessage="The form must be in the 5-10 character!">  
+								<label for="Email" class="col-form-label">Email :</label>
+								<input type="email" id="Email" class="form-control" placeholder="Email" required x-moz-errormessage="Email is invalid !">
+							</div>
+							<div class="form-group pull-right">
+								<button type="submit" class="btn btn-sm btn-secondary"> Sign Up</button>
+								<button type="button" class="btn btn-sm btn-danger" data-dismiss="modal"> Close </button>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div> <!-- /container -->
