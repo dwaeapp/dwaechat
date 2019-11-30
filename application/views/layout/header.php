@@ -16,7 +16,8 @@
 				<div class="row">
 					<div class="col-sm-8 col-md-7 py-4">
 						<h4 class="text-white">About</h4>
-						<p class="text-muted">An open source web chat made with <i style="color: red;" class="fa fa-heart"></i> <a href="https://jagocoding.com" title="Jadi Jago Coding Itu Keren" class="tooltip-test"><strong>jagocoding.com</strong></a>.</p>
+						<p class="text-muted">An open source web chat made with <i style="color: yellow;" class="fa fa-star"></i> <b>d-newbie</b> at <i style="color: red;" class="fa fa-heart"></i> <a href="https://jagocoding.com" title="Jadi Jago Coding Itu Keren" class="tooltip-test"><strong>jagocoding.com</strong></a> in modifications using the MVC system and in change using Bootstrap version 4 as well as some changes to the back end system by <a href="#"><b>DWA'E APPLICATIONS </b><i class="fa fa-gears" style="color: white;"></i></a></p>
+
 					</div>
 					<div class="col-sm-4 offset-md-1 py-4">
 						<h4 class="text-white">Development</h4>

@@ -5,7 +5,7 @@
 				<b> Dawet Ayu Engineering </b>
 			</p>    
 			<p class="footer-company-name">
-				DWA'E APPLICATIONS &copy; <?=date('Y')?>
+				&copy; <?=date('Y')?> DWA'E APPLICATIONS <i class="fa fa-linux" style="color: white;"></i>
 			</p> 
 		</div>
 		<div class="footer-right">  
