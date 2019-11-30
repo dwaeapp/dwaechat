@@ -30,6 +30,8 @@
 							<div class="form-group">
 								<label for="Username" class="col-form-label">Username :</label>
 								<input type="text" id="Username" class="form-control" placeholder="Username" required pattern="[a-zA-Z]{5,10}" x-moz-errormessage="The form must be in the 5-10 character!">
+							</div>
+							<div  class="form-group">
 								<label for="Password" class="col-form-label">Password :</label>
 								<input type="password" id="Password" class="form-control" placeholder="Password" required pattern=".{5,10}" x-moz-errormessage="The form must be in the 5-10 character!">
 							</div>
@@ -59,10 +61,14 @@
 					<div class="modal-body">
 						<form class="form-horizontal">
 							<div class="form-group"> 
-								<label for="Username" class="col-form-label">Username :</label> 
+								<label for="Username" class="col-form-label">Username :</label>
 								<input type="text" id="Username" class="form-control" placeholder="Username" required pattern="[a-zA-Z]{5,10}" x-moz-errormessage="The form must be in the 5-10 character!"> 
+							</div>
+							<div class="form-group">
 								<label for="Password" class="col-form-label">Password :</label> 
-								<input type="password" id="Password" class="form-control" placeholder="Password" required pattern=".{5,10}" x-moz-errormessage="The form must be in the 5-10 character!">  
+								<input type="password" id="Password" class="form-control" placeholder="Password" required pattern=".{5,10}" x-moz-errormessage="The form must be in the 5-10 character!"> 
+							</div>
+							<div class="form-group">
 								<label for="Email" class="col-form-label">Email :</label>
 								<input type="email" id="Email" class="form-control" placeholder="Email" required x-moz-errormessage="Email is invalid !">
 							</div>
