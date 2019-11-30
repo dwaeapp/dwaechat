@@ -1,34 +1,36 @@
 	<link rel="stylesheet" href="<?=base_url()?>assets/css/after.css">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<h1 style="font-size:20px;" class="pull-left text-primary"> DWAE CHAT ROOM</h1>
+			<div class="mt-4 mb-2 col-md-9">
+				<h1 style="font-size:20px; font-weight: bold;" class="pull-left text-primary"> DWAE CHAT ROOM</h1>
+			</div>
+			<div class="mb-4 col-md-3">  
+				<a href="#" class="btn btn-sm btn-block btn-danger" style="width: 150px;" type="button" data-toggle="modal" data-target="#logout"> <i class="fa fa-power-off"></i> Logout</a>  
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
-				<a href="#" class="btn btn-danger" type="button" data-toggle="modal" data-target="#logout"><i class="fa fa-power"></i> Logout</a>
-			</div>
+			<!-- View Chat Box -->
+			<div class="mb-2 col-md-9">
+				<div class="boxonline">Preview Message Here
+				</div>	
+			</div> 
 			<!-- View User Online -->
 			<div class="col-md-3">
-				<div class="boxonline">
+				<div class="boxonline">Preview User Online Here
 				</div>
 			</div>
 		</div>
 		<br/>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-9">
 				<form class="form-inline">
-					<input class="input-xlarge" name="message" type="text" placeholder="Type your message ...." required x-moz-errormessage="Please type your message !">
-					<input class="btn btn-info pull-right" id="send" type="submit" value="Send">
+					<input class="form-control" size="40" name="message" type="text" placeholder="Type your message ...." required x-moz-errormessage="Please type your message !">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<button class="btn btn-info" type="submit"> Send </button>
 				</form>
-				<audio controls id="sendnotif">
-					<source src="<?=base_url()?>assets/core/send.mp3">
-					Your browser does not support the audio element.
-				</audio>
 			</div>
-			<div class="col-md-6">
-				<a href="#" class="btn btn-info" data-toggle="popover" type="button" id="emot" data-placement="top" title="Emoticons (click)"><i class="fa fa-eye"></i> Emoticons</a>
+			<div class="col-md-3">
+				<a href="#" style="width: 150px;" class="btn btn-md btn-info" data-toggle="popover" type="button" id="emot" data-placement="top" title="Emoticons (click)"><i class="fa fa-eye"></i> Emoticons</a>
 			</div>
 		</div>
 	</div> <!-- /container -->
