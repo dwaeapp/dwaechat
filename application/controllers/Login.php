@@ -22,13 +22,11 @@ class Login extends CI_Controller {
 				);
 			}
 			$this->session->set_userdata($userdata);
-			$time = date("h:m:s");
-			$online = $this->m_login->set_online($this->session->userdata('nickname'),$time);
+			$online = $this->m_login->set_online($this->session->userdata('nickname'));
 			echo "ok";
 
 		}
-	}
-	
+	}	
 	function logout(){
 		$this->m_login->set_offline($this->session->userdata('nickname'));
 		$this->session->sess_destroy();

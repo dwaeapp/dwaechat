@@ -62,18 +62,25 @@
 						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
 					</div>
 					<div class="modal-body">
-						<form class="form-horizontal">
+						<form class="form-horizontal" id="form-register">
+							<div class="form-group">
+								<p id="reg-notif"></p>
+							</div>
 							<div class="form-group"> 
-								<label for="Username" class="col-form-label">Username :</label>
-								<input type="text" id="Username" class="form-control" placeholder="Username" required pattern="[a-zA-Z]{5,10}" x-moz-errormessage="The form must be in the 5-10 character!"> 
+								<label for="Ruser" class="col-form-label">Username :</label>
+								<input type="text" id="Ruser" class="form-control" placeholder="Username" required pattern="[a-zA-Z]{5,10}" x-moz-errormessage="The form must be in the 5-10 character!"> 
 							</div>
 							<div class="form-group">
-								<label for="Password" class="col-form-label">Password :</label> 
-								<input type="password" id="Password" class="form-control" placeholder="Password" required pattern=".{5,10}" x-moz-errormessage="The form must be in the 5-10 character!"> 
+								<label for="Rpass" class="col-form-label">Password :</label> 
+								<input type="password" id="Rpass" class="form-control" placeholder="Password" required pattern=".{5,10}" x-moz-errormessage="The form must be in the 5-10 character!"> 
 							</div>
 							<div class="form-group">
-								<label for="Email" class="col-form-label">Email :</label>
-								<input type="email" id="Email" class="form-control" placeholder="Email" required x-moz-errormessage="Email is invalid !">
+								<label for="Rnick" class="col-form-label">Nickname :</label>
+								<input type="text" id="Rnick" class="form-control" placeholder="Nickname" required pattern="[a-zA-Z]{5,10}" x-moz-errormessage="The form must be in the 5-10 character!">
+							</div>
+							<div class="form-group">
+								<label for="Rmail" class="col-form-label">Email :</label>
+								<input type="email" id="Rmail" class="form-control" placeholder="Email" required x-moz-errormessage="Email is invalid !">
 							</div>
 							<div class="form-group pull-right">
 								<button type="submit" class="btn btn-sm btn-secondary"> Sign Up</button>

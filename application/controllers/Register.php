@@ -34,7 +34,7 @@ class Register extends CI_Controller {
 			$save = $this->m_login->insert($data);
 			if($save){
 				$this->session->set_userdata('nickname',$nick);
-				$this->m_login->set_online($this->session->userdata('nickname'),date("h:i:s"));
+				$this->m_login->set_online($this->session->userdata('nickname'));
 				echo "yes";
 			}else{
 				echo "no";

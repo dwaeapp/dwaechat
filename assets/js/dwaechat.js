@@ -21,4 +21,33 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+
+	//Ajax Register
+	$("#form-register").submit(function(){
+		var Ruser = $.trim($("#Ruser").val());
+		var Rpass = $.trim($("#Rpass").val());
+		var Rnick = $.trim($("#Rnick").val());
+		var Rmail = $.trim($("#Rmail").val());
+		$.ajax({
+			url: 'register',
+			data: 'Ruser='+Ruser+'&Rpass='+Rpass+'&Rnick='+Rnick+'&Rmail='+Rmail,
+			type: 'POST',
+			success: function(alex){
+				if(alex=="ada"){
+					$("#reg-notif").html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> Anda Telah Terdaftar ! </div>');
+					return false;
+				}else if(alex=="yes"){
+					$("#reg-notif").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button>Pendaftaran Berhasil, Please Wait ! <img src="assets/core/alihkan.gif"></div>');
+					function redirect(){
+						document.location.href="dashboard";
+					}
+					setTimeout(redirect, 6000);
+				}else{
+					$("#reg-notif").html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button> Gagal Mendaftar ! </div>');
+					return false;
+				}
+			},
+		});
+		return false;
+	});
 });
