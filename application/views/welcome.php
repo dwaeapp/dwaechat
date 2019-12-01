@@ -26,7 +26,10 @@
 						<button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">&times;</span></button>
 					</div>
 					<div class="modal-body">
-						<form class="form-horizontal">
+						<form class="form-horizontal" id="form-login">
+							<div class="form-group">
+								<p id="notif"></p>
+							</div>
 							<div class="form-group">
 								<label for="Username" class="col-form-label">Username :</label>
 								<input type="text" id="Username" class="form-control" placeholder="Username" required pattern="[a-zA-Z]{5,10}" x-moz-errormessage="The form must be in the 5-10 character!">
@@ -37,7 +40,7 @@
 							</div>
 							<div class="form-group">
 								<label class="checkbox-inline">
-									<input id="remember" type="checkbox" value="rememberme"> <sup>Remember Me <font size=1 color='red'> <sup>*) 1 Hours</sup> </sup></font> 
+									<input id="Remember" type="checkbox" value="rememberme"> <sup>Remember Me <font size=1 color='red'> <sup>*) 1 Hours</sup> </sup></font> 
 								</label>
 							</div>
 							<div class="form-group pull-right">
