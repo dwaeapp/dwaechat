@@ -16,7 +16,8 @@
 			</div> 
 			<!-- View User Online -->
 			<div class="col-md-3">
-				<div class="boxonline"><?=$this->session->userdata('nickname')?>
+				<div class="boxonline">
+					<i class="fa fa-user"></i> <span class="bg-success"><?=$this->session->userdata('nickname')?> </span> &nbsp; <i class="fa fa-clock-o"></i> <span class="bg-info"> 10:10 &nbsp;</span>
 				</div>
 			</div>
 		</div>
