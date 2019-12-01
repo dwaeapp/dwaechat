@@ -16,10 +16,6 @@ margin: 0;
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
-.btn-danger { 
-margin-top:20px;
-width:90%;
-}
 #emot{
 width:90%;
 }
@@ -31,12 +27,6 @@ width:100%;
 border:8px solid #404040; 
 background-color:white;
 border-radius:10px;
-}
-input[type="text"]{
-	width:80%;
-}
-input[type="submit"]{
-	width:15%;
 }
 img{
 height:30px;

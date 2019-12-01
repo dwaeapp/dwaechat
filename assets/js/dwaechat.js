@@ -51,7 +51,16 @@ $(document).ready(function(){
 		return false;
 	});
 
-	//Load Online
+	//Load Messages
+	function loadmessages(){
+		$("#boxpesan").load("messages");
+		var msg = $("#boxpesan");
+		msg.scrollTop = msg.scrollHeight;
+	}
+
+	setInterval(loadmessages,1000);
+
+	//Load User Online
 	function loadonline(){
 		$(".boxonline").load("online");
 	}
