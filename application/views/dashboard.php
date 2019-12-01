@@ -11,19 +11,12 @@
 		<div class="row">
 			<!-- View Chat Box -->
 			<div class="mb-2 col-md-9">
-				<div class="boxonline"><?=$this->input->cookie('nickname')?>
+				<div class="boxmessages">
 				</div>	
 			</div> 
 			<!-- View User Online -->
 			<div class="col-md-3">
 				<div class="boxonline">
-					<?php
-					foreach($online->result() as $on):
-						$waktu = substr($on->waktu,10);
-						$waktu = substr($waktu,0,strlen($waktu)-3);
-					?>
-					&nbsp;<i class="fa fa-user"></i> <span class="bg-success"><?=$on->nickname?> </span> &nbsp; <i class="fa fa-clock-o"></i> <span class="bg-info"> <?=$waktu." WIB "?> &nbsp;</span><br/>
-					<?endforeach?>
 				</div>
 			</div>
 		</div>

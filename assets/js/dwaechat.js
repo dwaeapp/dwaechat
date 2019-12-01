@@ -50,4 +50,12 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+
+	//Load Online
+	function loadonline(){
+		$(".boxonline").load("online");
+	}
+
+	setInterval(loadonline,1000);
+
 });
