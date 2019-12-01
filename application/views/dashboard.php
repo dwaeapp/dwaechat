@@ -17,7 +17,9 @@
 			<!-- View User Online -->
 			<div class="col-md-3">
 				<div class="boxonline">
-					<i class="fa fa-user"></i> <span class="bg-success"><?=$this->session->userdata('nickname')?> </span> &nbsp; <i class="fa fa-clock-o"></i> <span class="bg-info"> 10:10 &nbsp;</span>
+					<?foreach($online->result() as $on):?>
+					<i class="fa fa-user"></i> <span class="bg-success"><?=$on->nickname?> </span> &nbsp; <i class="fa fa-clock-o"></i> <span class="bg-info"> <?=$on->waktu?> &nbsp;</span>
+					<?endforeach?>
 				</div>
 			</div>
 		</div>
