@@ -17,8 +17,12 @@
 			<!-- View User Online -->
 			<div class="col-md-3">
 				<div class="boxonline">
-					<?foreach($online->result() as $on):?>
-					<i class="fa fa-user"></i> <span class="bg-success"><?=$on->nickname?> </span> &nbsp; <i class="fa fa-clock-o"></i> <span class="bg-info"> <?=$on->waktu?> &nbsp;</span>
+					<?php
+					foreach($online->result() as $on):
+						$waktu = substr($on->waktu,10);
+						$waktu = substr($waktu,0,strlen($waktu)-3);
+					?>
+					&nbsp;<i class="fa fa-user"></i> <span class="bg-success"><?=$on->nickname?> </span> &nbsp; <i class="fa fa-clock-o"></i> <span class="bg-info"> <?=$waktu." WIB "?> &nbsp;</span><br/>
 					<?endforeach?>
 				</div>
 			</div>
