@@ -51,6 +51,25 @@ $(document).ready(function(){
 		return false;
 	});
 
+	//Send Message
+	$("#form-pesan").submit(function(){
+		var msg = $("#pesan").val();
+
+		$.ajax({
+			url: 'send',
+			data: 'messages='+msg,
+			type: 'POST',
+			success: function(nisa){
+				if(nisa=="terkirim"){
+					$("#pesan").val("");
+				}else{
+					return false;
+				}
+			},
+		});
+		return false;
+	});
+
 	//Load Messages
 	function loadmessages(){
 		$("#boxpesan").load("messages");
@@ -66,5 +85,4 @@ $(document).ready(function(){
 	}
 
 	setInterval(loadonline,1000);
-
 });

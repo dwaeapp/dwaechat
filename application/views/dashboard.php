@@ -23,10 +23,11 @@
 		<br/>
 		<div class="row">
 			<div class="col-md-9">
-				<form class="form-inline">
+				<form id="form-pesan">
 					<div class="form-group">
-						<input class="form-control" size="50" name="message" type="text" placeholder="Type your message, Enter for send ...." required x-moz-errormessage="Please type your message !">
+						<input class="form-control" id="pesan" type="text" placeholder="Type your message, Enter for send ...." required x-moz-errormessage="Please type your message !">
 					</div>
+					<input type="submit" value="Send" class="btn btn-info pull-right">
 				</form>
 			</div>
 			<div class="col-md-3">
